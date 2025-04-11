@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to right, #b3ffab, #12fff7);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .game-container {
+    text-align: center;
+  }
+  
+  #game {
+    width: 600px;
+    height: 200px;
+    background-color: #fff;
+    border: 3px solid #444;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #dino {
+    width: 40px;
+    height: 40px;
+    background: url('https://i.ibb.co/r6wHpG2/dino.png') no-repeat center/cover;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+  }
+  
+  .jump {
+    animation: jump 0.4s ease-in-out;
+  }
+  
+  @keyframes jump {
+    0% { bottom: 0; }
+    50% { bottom: 80px; }
+    100% { bottom: 0; }
+  }
+  
+  #cactus {
+    width: 25px;
+    height: 50px;
+    background: url('https://i.ibb.co/w0ynjtx/cactus.png') no-repeat center/cover;
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+  }
+  
+  .info {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
