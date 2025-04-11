@@ -28,7 +28,11 @@ function jump() {
     isJumping = false;
   }, 400);
 }
-
+// Deteksi layar sentuh (mobile)
+document.addEventListener("touchstart", function () {
+    jump();
+  });
+  
 function startGame() {
   let obstacleLeft = 800;
   obstacle.style.left = obstacleLeft + "px";
